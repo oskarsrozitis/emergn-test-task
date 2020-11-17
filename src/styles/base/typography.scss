@@ -1,0 +1,38 @@
+a:link,
+a:active,
+a {
+    color: $dark__color;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.2em;
+}
+
+.lead {
+    font-size: $base-font-size * 2;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.location__info,
+.languages__info {
+    font-weight: bold;
+}
+
+h3.withBG {
+    background: rgba(255, 255, 255, 0.8);
+    margin:0;
+    padding:20px;
+}

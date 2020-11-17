@@ -1,0 +1,14 @@
+input[type="text"] {
+    padding: 20px;
+    border: 1px solid $accent__color;
+    position: relative;
+    min-width: 300px;
+    &:focus {
+        border: 1px solid #888;
+        outline: none;
+    }
+}
+
+hr {
+    border: 1px solid $accent__color;
+}

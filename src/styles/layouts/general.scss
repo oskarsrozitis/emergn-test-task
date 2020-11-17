@@ -1,0 +1,126 @@
+body {
+    font-family: $base-font-face;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+}
+
+.header {
+    background: $light__color;
+    grid-template-columns: 1fr 2fr 1fr;
+    display: grid;
+    @media (max-width: 980px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media print {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.grid, .main section {
+    border: 1px solid #ccc;
+    min-height: 250px;
+}
+
+section.extraPadding {
+    padding: 15px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 980px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media print {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.grid section {
+    align-items: start;
+}
+
+section h3 {
+    text-align: center;
+}
+
+.quote__block {
+    position: relative;
+    font-style: italic;
+    font-family: "Georgia", sans;
+    h3 {
+        font-style: normal;
+    }
+}
+
+.quote__block:before,
+.quote__block:after {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    position: absolute;
+    content: open-quote;
+    top: 80px;
+    left: 30px;
+    font-size: 8em;
+    color: darken($white, 7%);
+    z-index: -1;
+}
+
+.quote__block:after {
+    content: close-quote;
+    top: auto;
+    left: auto;
+    bottom: -20px;
+    right: 20px;
+}
+
+img.profile__img {
+    width: 100%;
+    max-width: 800px;
+}
+
+img.sample_code__img {
+    max-width: 400px;
+}
+
+.author {
+    position: relative;
+    float: right;
+}
+
+.author:before {
+    content: " - ";
+    display: block;
+    left: -10px;
+    position: absolute;
+}
+
+.skills span {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    color: $light__color;
+    &.strong {
+        background: #000000;
+    }
+    &.average {
+        background: #5C5C5C;
+    }
+    &.basic {
+        background: #A2A2A2;
+    }
+    
+}
+
+
+@media print {
+    .print {display: none !important; }
+    .quote__block:after { display: none !important}
+    .quote__block:before { display: none !important }
+}

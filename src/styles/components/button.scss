@@ -1,0 +1,31 @@
+button {
+    background: $dark__color;
+    color: $light__color;
+    border: none;
+    padding: 7px 15px;
+    @include border-radius(2em);
+}
+
+.formBtn {
+    border-radius: 50px;
+    background: #E5E5E5;
+    color: #FFF;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0;
+     margin: 7px;
+}
+
+.editable {
+    position: relative;
+    display: block;
+    max-width: 350px;
+}
+
+.editable .controls {
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+}
+
+

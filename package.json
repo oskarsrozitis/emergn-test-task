@@ -1,0 +1,41 @@
+{
+  "name": "emergn",
+  "version": "1.0.0",
+  "description": "Test task for Front-end position by Oskars Rozitis",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --port 8111 --mode development --env development",
+    "build": "webpack --mode production"
+  },
+  "author": "Oskars Rozītis",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "css-loader": "^5.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "html-loader": "^1.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.0",
+    "node-sass": "^5.0.0",
+    "path-browserify": "^1.0.1",
+    "sass-loader": "^10.1.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-serve": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "browserify": "^17.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "style-loader": "^2.0.0"
+  }
+}
